@@ -19,7 +19,6 @@ header{
     grid-template-rows: 40px 536px;
     row-gap: 64px;
     align-content: center;
-    outline: 1px solid black;
 }
 .header__nav{
     grid-column: 1 / 13;
@@ -27,7 +26,6 @@ header{
 }
 .nav__logo_block{
     grid-column: 2 / 4;
-    outline: 1px solid black;
 }
 .nav__logo{
     font-size: 32px;
@@ -42,7 +40,6 @@ header{
 }
 .nav__list{
     grid-column: 6 / 12;
-    outline: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,11 +56,75 @@ header{
     font-family: "Fira Sans", sans-serif;
 }
 .nav__list_item:hover{
-    transition: 0.48s;
-    background-color: #FFC074;
+    transition: 0.28s;
+    background-color: #f9aa4a;
     color: #f1f1f1;
 }
 .header__content{
     grid-column: 1 / 13;
     grid-row: 2 / 3;
+}
+.header__info{
+    grid-column: 1 / 8;
+    display: grid;
+    row-gap: 16px;
+    align-content: center;
+}
+.header__title{
+    font-size: 36px;
+    line-height: 44px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    text-align: start;
+    color: #1c1c1c;
+}
+.header__txt{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-align: start;
+    color: #1c1c1c;
+}
+.header__but{
+    padding: 12px 0;
+    width: 264px;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #f1f1f1;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #FFC074;
+}
+.header__but:hover{
+    transition: 0.36s;
+    background-color: #f9aa4a;
+}
+.header__photo_card{
+    grid-column: 8 / 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 42px 0 56px 0;
+    background-color: #FCF9F3;
+    border-radius: 20px;
+    box-shadow: 2px 4px 8px 0 rgba(28,28,28,0.25);
+}
+.photo_card__pic{
+    height: 372px;
+    width: 372px;
+    object-fit: cover;
+}
+.photo_card__description{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #1c1c1c;
+    font-style: italic;
 }
