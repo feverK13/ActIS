@@ -165,6 +165,9 @@ main{
     font-family: "Fira Sans", sans-serif;
     background-color: #ECE4D9;
 }
+.info_block__txt_decoration{
+    color: #FFC074;
+}
 .about_us__info_block:nth-child(1){
     grid-row: 3 / 9;
     grid-column: 1 / 5;
@@ -197,6 +200,7 @@ main{
     grid-column: 5 / 9;
     grid-row: 3 / 8;
     width: 100%;
+    box-shadow: 2px 4px 8px 0 rgba(28,28,28,0.25);
 }
 .about_us__decoration{
     z-index: -2;
