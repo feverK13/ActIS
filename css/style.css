@@ -372,3 +372,34 @@ footer{
     transition: 0.36s;
     background-color: #f9aa4a;
 }
+.footer__contact_info{
+    grid-column: 8 / 11;
+    display: grid;
+    row-gap: 20px;
+}
+.footer__contact_section{
+    display: grid;
+    row-gap: 12px;
+    justify-content: start;
+    align-content: start;
+}
+.footer__sub_title{
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-align: start;
+    color: #1c1c1c;
+}
+.footer__link{
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Fira Mono", sans-serif;
+    font-weight: 500;
+    text-align: start;
+    color: #1c1c1c;
+    text-decoration: none;
+}
+.footer__link:hover{
+    text-decoration: underline;
+}
