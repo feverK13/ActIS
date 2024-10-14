@@ -322,7 +322,6 @@ footer{
     grid-column: 1 / 13;
     align-content: center;
     row-gap: 56px;
-    outline: 1px solid black;
 }
 .footer__title{
     grid-column:  2 / 12;
@@ -402,4 +401,17 @@ footer{
 }
 .footer__link:hover{
     text-decoration: underline;
+}
+.footer__socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer__icon{
+    color: #1c1c1c;
+}
+.footer__icon:hover{
+    transition: 0.24s;
+    color: #f9aa4a;
 }
