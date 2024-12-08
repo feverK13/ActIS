@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/style.css">
         <title>ActIS</title>
         <!--Add favicon-->
@@ -13,8 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="griding"><!--Header block-->
-            <nav class="header__nav griding">
+        <header><!--Header block-->
+            <nav class="header__nav">
                 <div class="nav__logo_block">
                     <p class="nav__logo">Act<span class="nav__logo nav__logo_decoration">IS</span></p>
                 </div>
@@ -27,7 +28,7 @@
                 </div>
             </nav>
 
-            <div class="header__content griding">
+            <div class="header__content">
                 <div class="header__info">
                     <h1 class="header__title">Відкрийте для себе велич <br>українських Карпат разом з ActIS</h1>
                     <p class="header__txt">Ми пропонуємо незабутні туристичні походи в Карпати для людей будь-якого рівня досвіду. Наші досвідчені гіди проведуть вас мальовничими маршрутами, поділяться цікавими історіями та забезпечать вашу безпеку.</p>
@@ -43,7 +44,37 @@
 
 
         <main class="griding">
-            <div class="main__about_us griding" id="aboutUs"><!--About US block-->
+            <div class="main__services griding">
+                <div class="services__heading">
+                    <h2 class="services__tittle">Пропоновані послуги</h2>
+                    <p class="services__sub_title">
+                        Ми пропонуємо різноманітні походи для людей будь-якого рівня досвіду. Наші досвідчені гіди проведуть вас мальовничими маршрутами, поділяться цікавими історіями та забезпечать вашу безпеку.
+                    </p>
+                </div>
+
+                <div class="services__info griding">
+                    <div class="services__info_block">
+                        <span class="services__service_status">Походи для початківців</span>
+                        <span class="services__price">180 грн з особи</span>
+                        <p class="services__txt">Ці походи ідеально підходять для людей, які ніколи раніше не ходили в гори. Ми пропонуємо короткі та нескладні маршрути, які дозволять вам познайомитися з красою Карпат. Наші досвідчені гіди завжди поруч, щоб допомогти вам у будь-якій ситуації.</p>
+                    </div>
+
+                    <div class="services__info_block">
+                        <span class="services__service_status">Походи середньої важкості</span>
+                        <span class="services__price">250 грн з особи</span>
+                        <p class="services__txt">Ці походи ідеально підходять для людей, які ніколи раніше не ходили в гори. Ми пропонуємо короткі та нескладні маршрути, які дозволять вам познайомитися з красою Карпат. Наші досвідчені гіди завжди поруч, щоб допомогти вам у будь-якій ситуації.</p>
+                    </div>
+
+                    <div class="services__info_block">
+                        <span class="services__service_status">Походи для досвідчених</span>
+                        <span class="services__price">320 грн з особи</span>
+                        <p class="services__txt">Ці походи ідеально підходять для людей, які ніколи раніше не ходили в гори. Ми пропонуємо короткі та нескладні маршрути, які дозволять вам познайомитися з красою Карпат. Наші досвідчені гіди завжди поруч, щоб допомогти вам у будь-якій ситуації.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="main__about_us griding" id="aboutUs">
                 <div class="about_us__info_block">
                     <h3 class="info_block__title">Історія</h3>
                     <p class="info_block__txt">
@@ -80,40 +111,13 @@
                         </div>
                     </div>
                 </div>
-            </div><!--About US block-->
+            </div> -->
 
-            <div class="main__services griding"><!--Change infoBlock height for correct screen height changing-->
-                <div class="services__heading">
-                    <h2 class="services__tittle">Пропоновані послуги</h2>
-                    <p class="services__sub_title">
-                        Ми пропонуємо різноманітні походи для людей будь-якого рівня досвіду. Наші досвідчені гіди проведуть вас мальовничими маршрутами, поділяться цікавими історіями та забезпечать вашу безпеку.
-                    </p>
-                </div>
-
-                <div class="services__info griding">
-                    <div class="services__info_block">
-                        <span class="services__service_status">Походи для початківців</span>
-                        <span class="services__price">180 грн з особи</span>
-                        <p class="services__txt">Ці походи ідеально підходять для людей, які ніколи раніше не ходили в гори. Ми пропонуємо короткі та нескладні маршрути, які дозволять вам познайомитися з красою Карпат. Наші досвідчені гіди завжди поруч, щоб допомогти вам у будь-якій ситуації.</p>
-                    </div>
-
-                    <div class="services__info_block">
-                        <span class="services__service_status">Походи середньої важкості</span>
-                        <span class="services__price">250 грн з особи</span>
-                        <p class="services__txt">Ці походи ідеально підходять для людей, які ніколи раніше не ходили в гори. Ми пропонуємо короткі та нескладні маршрути, які дозволять вам познайомитися з красою Карпат. Наші досвідчені гіди завжди поруч, щоб допомогти вам у будь-якій ситуації.</p>
-                    </div>
-
-                    <div class="services__info_block">
-                        <span class="services__service_status">Походи для досвідчених</span>
-                        <span class="services__price">320 грн з особи</span>
-                        <p class="services__txt">Ці походи ідеально підходять для людей, які ніколи раніше не ходили в гори. Ми пропонуємо короткі та нескладні маршрути, які дозволять вам познайомитися з красою Карпат. Наші досвідчені гіди завжди поруч, щоб допомогти вам у будь-якій ситуації.</p>
-                    </div>
-                </div>
-            </div>
+            
         </main>
 
 
-        <footer class="griding">
+        <!-- <footer class="griding">
             <h2 class="footer__title">Заповніть форму щоб зв’язатись з нами, або скористайтесь контактною інформацією</h2>
             
             <form class="footer__contact_form">
@@ -147,6 +151,6 @@
                     <path fill="currentColor" d="M13 22H9a1 1 0 0 1-1-1v-6.2H6a1 1 0 0 1-1-1v-3.6a1 1 0 0 1 1-1h2V7.5A5.77 5.77 0 0 1 14 2h3a1 1 0 0 1 1 1v3.6a1 1 0 0 1-1 1h-3v1.6h3a1 1 0 0 1 .8.39a1 1 0 0 1 .16.88l-1 3.6a1 1 0 0 1-1 .73H14V21a1 1 0 0 1-1 1m-3-2h2v-6.2a1 1 0 0 1 1-1h2.24l.44-1.6H13a1 1 0 0 1-1-1V7.5a2 2 0 0 1 2-1.9h2V4h-2a3.78 3.78 0 0 0-4 3.5v2.7a1 1 0 0 1-1 1H7v1.6h2a1 1 0 0 1 1 1Z" />
                 </svg>
             </div>
-        </footer>
+        </footer> -->
     </body>
 </html>
