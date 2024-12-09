@@ -4,24 +4,26 @@
         background-color: #faf1e6;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: space-around;
         align-items: center;
-        padding: 16px;
+        padding: 2vh 0;
+        gap: 8vh;
     }
     
-    
+
+
     header{
-        outline: 2px solid red;
         display: grid;
-        grid-template-columns: minmax(1048px , 1128px);
+        grid-template-columns: minmax(960px , 1128px);
         align-content: start;
         justify-content: stretch;
         gap: 48px;
-        /* height: 100vh; */
+        padding: 0 16px;
+        height: 90vh;
     }
+
     .header__nav{
         width: 100%;
-        
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -32,10 +34,9 @@
     }
     .nav__logo_decoration{
         color: #F1A140;
-    
     }
+
     .header__content{
-        outline: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -47,7 +48,7 @@
         align-items: flex-start;
         justify-content: space-between;
         gap: 16px;
-        min-width: 544px;
+        min-width: 504px;
     }
     .header__photo_card{
         display: flex;
@@ -58,6 +59,7 @@
         background-color: #FCF9F3;
         padding: 42px 42px 56px 42px;
         border-radius: 20px;
+        box-shadow: 2px 4px 4px 0 rgba(28,28,28,0.25);
     }
     .photo_card__pic{
         height: 372px;
@@ -65,90 +67,33 @@
     }
     
     
-    /* main{
-        grid-column: 1 / 13;
-        grid-template-rows: 100vh 100vh;
-    }
-    
-    .main__about_us{
-        grid-column: 1 / 13;
-        grid-template-rows: repeat(16, 1fr);
-        z-index: 0;
-    }
-    .about_us__info_block{
+
+    main{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         align-items: center;
-    }
-    
-    .about_us__info_block:nth-child(1){
-        grid-row: 3 / 9;
-        grid-column: 1 / 5;
-    }
-    .about_us__info_block:nth-child(2){
-        grid-row: 10 / 16;
-        grid-column: 1 / 5;
-    }
-    .about_us__info_block:nth-child(3){
-        grid-row: 3 / 9;
-        grid-column: 9 / 13;
-    }
-    .about_us__info_block:nth-child(4){
-        grid-row: 10 / 16;
-        grid-column: 9 / 13;
-    }
-    
-    .about_us__pic{
-        border-radius: 360px;
-        grid-column: 5 / 9;
-        grid-row: 3 / 8;
+        justify-content: flex-start;
         width: 100%;
-        box-shadow: 2px 4px 8px 0 rgba(28,28,28,0.25);
     }
-    .about_us__decoration{
-        z-index: -2;
-        height: 100%;
-        grid-column: 1 / 13;
-        grid-row: 1 / 17;
-        display: block;
-    }
-    .decoration_circle{
-        margin: auto auto;
-        border: 2px solid transparent;
-        border-radius: 100%;
-        background: linear-gradient(#faf1e6, #faf1e6) padding-box,
-        linear-gradient(to top, #1c1c1c, #faf1e6, #faf1e6) border-box;
-    }
-    .decoration_circle1{
-        margin-top: 56px;
-        width: 720px;
-        height: 620px;
-    }
-    .decoration_circle2{
-        width: 640px;
-        height: 580px;
-    }
-    .decoration_circle3{
-        width: 560px;
-        height: 540px;
-    }
-    
     .main__services{
-        grid-column: 1 / 13;
-        row-gap: 56px;
+        display: grid;
+        grid-template-columns: minmax(960px , 1128px);
         align-content: center;
+        justify-content: stretch;
+        gap: 48px;
+        padding: 0 16px;
+        height: 100vh;
     }
     .services__heading{
-        grid-column: 3 / 11;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    
     .services__info{
-        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px ,360px));
+        column-gap: 24px;
     }
     .services__info_block{
         padding: 20px;
@@ -159,33 +104,60 @@
         justify-content: center;
         align-items: flex-start;
         box-shadow: 2px 4px 4px 0 rgba(28,28,28,0.25);
-    }
-    .services__info_block:nth-child(1){
-        grid-column: 1 / 5;
-    }
-    .services__info_block:nth-child(2){
-        grid-column: 5 / 9;
-    }
-    .services__info_block:nth-child(3){
-        grid-column: 9 / 13;
-    }
+    }    
     
     
-    
-    footer{
-        grid-column: 1 / 13;
-        align-content: center;
-        row-gap: 56px;
-    }
-    
-    .footer__contact_form{
-        grid-column: 2 / 7;
+    .main__about_us{
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        row-gap: 20px;
+        grid-template-columns: repeat(2, minmax(478px, 628px));
+        justify-content: start;
+        column-gap: 5%;
+    }
+    .about_us__pic{
+        align-self: center;
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        object-position: -50px;
+        border-top-right-radius: 36px;
+        border-bottom-right-radius: 36px;
+    }
+    .about_us__info{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 16px;
+    }
+    .about_us__info_block{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+
+    footer{
+        display: grid;
+        grid-template-columns: minmax(960px , 1128px);
+        grid-template-rows: 1fr 2fr;
+        align-content: start;
+        justify-content: center;
+        gap: 48px;
+        padding: 0 16px;
+    }
+    .footer__content{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(380px, 456px));
+        column-gap: 40px;
+        justify-content: space-between;
+    }
+    .footer__contact_form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
     }
     .footer__input{
-        grid-column: 1 / 4;
         padding: 16px;
         border-radius: 16px;
         background-color: #ECE4D9;
@@ -198,10 +170,13 @@
     .footer__input::placeholder{
         color: #1c1c1c;
     }
-    
-    
+
+    .footer__info{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
     .footer__contact_info{
-        grid-column: 8 / 11;
         display: grid;
         row-gap: 20px;
     }
@@ -217,6 +192,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        gap: 12px;
     }
     .footer__icon{
         color: #1c1c1c;
@@ -224,7 +200,7 @@
     .footer__icon:hover{
         transition: 0.24s;
         color: #f9aa4a;
-    } */
+    }
 }
 
 @media (min-width: 375px) and (max-width: 1079px){
