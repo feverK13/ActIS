@@ -26,7 +26,7 @@
     align-items: flex-start;
     box-shadow: 2px 4px 4px 0 rgba(28,28,28,0.25);
 }
-footer{
+/* footer{
     display: grid;
     grid-template-columns: minmax(960px , 1128px);
     grid-template-rows: 1fr 2fr;
@@ -90,9 +90,9 @@ footer{
 .footer__icon:hover{
     transition: 0.24s;
     color: #f9aa4a;
-}
+} */
 
-@media screen and (min-width: 1080px){
+@media screen and (min-width: 1079px){
     body{
         background-color: #faf1e6;
         display: flex;
@@ -232,7 +232,7 @@ footer{
     }
 
 
-    /* footer{
+    footer{
         display: grid;
         grid-template-columns: minmax(960px , 1128px);
         grid-template-rows: 1fr 2fr;
@@ -296,7 +296,7 @@ footer{
     .footer__icon:hover{
         transition: 0.24s;
         color: #f9aa4a;
-    } */
+    }
 }
 
 
@@ -304,7 +304,7 @@ footer{
 
 
 
-@media (min-width: 375px) and (max-width: 831px){
+@media (min-width: 375px) and (max-width: 1079px){
     body{
         background-color: pink /*#faf1e6*/;
         display: flex;
@@ -320,7 +320,7 @@ footer{
     header{
         outline: 2px solid red;
         display: grid;
-        grid-template-columns: minmax(343px , 800px);
+        grid-template-columns: minmax(330px , 800px);
         align-content: center;
         justify-content: center;
         gap: 48px;
@@ -346,17 +346,18 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         gap: 8vh;
     }
     .header__info{
-        min-width: 343px;
         height: 80vh;
+        flex-grow: 1;
         justify-content: flex-end;
         max-width: 596px;
     }
     .header__photo_card{
         display: flex;
+        flex-grow: 2;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -365,12 +366,9 @@ footer{
         padding: 24px 24px 32px 24px;
         border-radius: 20px;
         box-shadow: 2px 4px 4px 0 rgba(28,28,28,0.25);
-        /* min-width: 343px; */
         max-width: 596px;
     }
     .photo_card__pic{
-        /* height: 295px; */
-        /* min-width: 295px; */
         width: 100%;
         object-fit: cover;
     }
@@ -448,36 +446,29 @@ footer{
     }
 
 
-    /* footer{
+    footer{
+        outline: 2px solid red;
         display: grid;
-        grid-template-columns: minmax(960px , 1128px);
-        grid-template-rows: 1fr 2fr;
-        align-content: start;
+        grid-template-columns: minmax(330px , 800px);
+        align-content: center;
         justify-content: center;
-        gap: 48px;
+        row-gap: 48px;
         padding: 0 16px;
     }
     .footer__content{
-        display: grid;
-        grid-template-columns: repeat(2, minmax(380px, 456px));
-        column-gap: 40px;
-        justify-content: space-between;
+        display: flex;
+        gap: 40px;
+        outline: 1px solid green;
+        justify-content: center;
     }
     .footer__contact_form{
+        outline: 1px solid blue;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: stretch;
-    }
-    .footer__input{
-        padding: 16px;
-        border-radius: 16px;
-        background-color: #ECE4D9;
-        border: none;
-        color: #1c1c1c;
-        font-family: "Fira Sans", sans-serif;
-        font-size: 16px;
-        line-height: 20px;
+        justify-content: flex-start;
+        flex-grow: 2;
+        min-width: 330px;
     }
     .footer__input::placeholder{
         color: #1c1c1c;
@@ -487,10 +478,12 @@ footer{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        flex-grow: 1;
     }
     .footer__contact_info{
-        display: grid;
-        row-gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
     .footer__contact_section{
         display: grid;
@@ -512,5 +505,18 @@ footer{
     .footer__icon:hover{
         transition: 0.24s;
         color: #f9aa4a;
+    }
+}
+
+
+@media  screen and (max-width: 800px) {
+    /* header{
+        grid-template-columns: minmax(330px, 800px);
     } */
+    .header__content{
+        flex-wrap: wrap;
+    }
+    .footer__content{
+        flex-wrap: wrap;
+    }
 }
