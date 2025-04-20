@@ -13,8 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <header><!--Header block-->
+    <body class="body">
+        <header>
             <nav class="header__nav">
                 <div class="nav__logo_block">
                     <p class="nav__logo">Act<span class="nav__logo nav__logo_decoration">IS</span></p>
@@ -26,6 +26,8 @@
                     <a href="#" class="nav__list_item">Послуги</a>
                     <a href="#" class="nav__list_item">Контакти</a>
                 </div>
+
+                <div class="menu_icon"></div>
             </nav>
 
             <div class="header__content">
@@ -40,12 +42,12 @@
                     <p class="photo_card__description">Гора Хом'як</p>
                 </div>
             </div>
-        </header><!--Header block-->
+        </header>
 
 
 
         <main>
-            <div class="main__services">
+            <div class="main__services" id="services">
                 <div class="services__heading">
                     <h2 class="services__tittle">Пропоновані послуги</h2>
                     <p class="services__sub_title">
@@ -151,5 +153,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./main.js"></script>
     </body>
 </html>
