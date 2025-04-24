@@ -170,16 +170,8 @@
         border-radius: 16px;
         background-color: #ECE4D9;
         border: none;
-        font-family: "Fira Sans", sans-serif;
-        font-size: 16px;
-        line-height: 20px;
     }
-    .footer__input:focus::placeholder{
-        color: #1c1c1c;
-    }
-    .footer__input:focus{
-        outline: 2px solid #F1A140;
-    }
+    
 
     .footer__info{
         display: flex;
@@ -225,7 +217,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding: 2vh 0 4vh 0;
+        padding: 2vh 0;
         gap: 10vh;
     }
     .no_scroll{
